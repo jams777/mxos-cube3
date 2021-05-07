@@ -11,6 +11,7 @@
 # either express or implied.
 
 # updated Jams777<jams7777@gmail.com> : Reimplemented for Python 3.
+# publish : https://pypi.org/project/mxos-cube3/
 
 import os
 from setuptools import setup
@@ -20,8 +21,8 @@ with open("README.md", "r") as fh:
 
 setup(
     name="mxos-cube3",
-    version="0.1.0",
-    description="MXCHIP MXOS command line tool for repositories version control, publishing and updating code from remotely hosted repositories, and invoking MXOS own build system and export functions, among other operations",
+    version="0.1.1",
+    description="MXCHIP MXOS command line tool for python3.\n mxos-cube3 enables repositories version control, publishing and updating code from remotely hosted repositories, and invoking MXOS own build system and export functions, among other operations",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/jams777/mxos-cube3',
@@ -34,7 +35,7 @@ setup(
             'mxos-cube=mxos.mxos:main',
         ]
     },
-    python_requires='>=3.1,<4',
+    python_requires='>=3,<4',
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",

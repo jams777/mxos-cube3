@@ -19,6 +19,7 @@
 # pylint: disable=invalid-name, missing-docstring, bad-continuation
 
 # updated Jams777<jams7777@gmail.com> : Reimplemented for Python 3.
+# publish : https://pypi.org/project/mxos-cube3/
 
 import traceback
 import sys
@@ -1641,7 +1642,7 @@ def _run_make(arg_list):
 
 # Subparser handling
 parser = argparse.ArgumentParser(prog='mxos',
-    description="Code management tool for MXCHIP MXOS - https://code.aliyun.com/mxos/mxos\nversion %s\n\nUse 'mxos <command> -h|--help' for detailed help.\nOnline manual and guide available at https://github.com/MXCHIP/mxos-cube" % ver,
+    description="Code management tool for MXCHIP MXOS - https://code.aliyun.com/mxos/mxos\nversion %s\n\nUse 'mxos <command> -h|--help' for detailed help.\nOnline manual and guide available at https://github.com/jams777/mxos-cube3" % ver,
     formatter_class=argparse.RawTextHelpFormatter)
 subparsers = parser.add_subparsers(title="Commands", metavar="           ")
 parser.add_argument("--version", action="store_true", dest="version", help="print version number and exit")
@@ -2708,10 +2709,10 @@ def main():
     # Help messages adapt based on current dir
     cwd_root = os.getcwd()
 
-    if sys.version_info[0] == 2 and sys.version_info[1] < 7:
+    if sys.version_info[0] < 3:
         error(
-            "mxos cube is compatible with Python version >= 2.7 and < 3.0\n"
-            "Please refer to the online guide available at https://code.aliyun.com/mxos/mxos-cube")
+            "mxos cube is compatible with Python version >= 3.0\n"
+            "Please refer to the online guide available at https://github.com/jams777/mxos-cube3")
     
     # Parse/run command
     if len(sys.argv) <= 1:
