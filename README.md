@@ -52,3 +52,14 @@ compile : <br>
 ```
 d:\> mxos make ....
 ```
+
+# License
+SPDX-License-Identifier: Apache-2.0
+
+## Author
+email : jams7777@gmail.com <br>
+Github : [JiamSeo](https://github.com/jams777/) <br>
+facebook : [Jiam Seo](https://www.facebook.com/jiam.seo) <br>
+linkedin : [JIAM SEO](https://www.linkedin.com/in/jams777/) <br>
+
+ 
