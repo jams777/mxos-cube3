@@ -21,7 +21,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="mxos-cube3",
-    version="0.1.1",
+    version="0.1.2",
     description="MXCHIP MXOS command line tool for python3.\n mxos-cube3 enables repositories version control, publishing and updating code from remotely hosted repositories, and invoking MXOS own build system and export functions, among other operations",
     long_description=long_description,
     long_description_content_type="text/markdown",
